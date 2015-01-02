@@ -4,6 +4,8 @@
     <title>Ribbit - A Treehouse Project</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link href="css/bootstrap-theme.min.css" rel="stylesheet" media="screen">
+    <link href="css/my-styles.css" rel="stylesheet" media="screen">
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
       <script src="../../assets/js/html5shiv.js"></script>
@@ -11,16 +13,33 @@
       <![endif]-->
   </head>
   <body>
-    <div class="container">
-      <header class="page-header">
-        <ul class="nav nav-pills pull-right">
-          <li class="active"><a href="#">Home</a></li>
-          <li><a href="#">About Ribbit</a></li>
-          <li><a href="#">Treehouse</a></li>
-        </ul>
-        <h3>Ribbit</h3>
-      </header>
 
+    <!-- Navbar -->
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+
+        <button type="button" class="navbar-toggle" data-toggle="collapse"
+                                                    data-target=".navbar-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+
+        <a class="navbar-brand text-muted" href="#">Ribbit</a>
+        <div class="collapse navbar-collapse">
+
+          <ul class="nav navbar-nav navbar-right">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#">About Ribbit</a></li>
+            <li><a href="#">Treehouse</a></li>
+          </ul>
+
+        </div>
+      </div> 
+    </div>
+    <!-- End navbar -->
+
+    <div class="container">
       <div class="jumbotron">
         <h1>Self-destructing message app</h1>
         <p class="lead">Learn how to build this fun little app by signing up for a Treehouse account today! We'll teach you how to build both apps from scratch!</p>
@@ -64,11 +83,11 @@
 
           <div class="row">
             <div class="col-sm-6 col-md-push-6">
-               <img class="img-responsive" src="img/thumb.jpg"/> 
+              <img class="img-responsive" src="img/thumb.jpg"/> 
             </div>
             <div class="col-sm-6 col-md-pull-6">
-             <p>Get access to these courses for only $24 a month!</p> 
-             <a href="#">Visit Treehouse Now &raquo;</a>
+              <p>Get access to these courses for only $24 a month!</p> 
+              <a href="#">Visit Treehouse Now &raquo;</a>
             </div>
           </div>
         </div>
@@ -88,5 +107,7 @@
         <p>&copy; 2013 Ribbit - By Treehouse Island, Inc.</p>
       </div>
     </div>
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
   </body>
 </html>
